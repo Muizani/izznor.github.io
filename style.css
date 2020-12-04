@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration:none;
+}
+.max-width{
+    max-width:1300px ;
+    padding: 0 80px;
+    margin: auto;
+}
+.navbar{
+    position:fixed;
+    width:100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family:'Ubuntu',sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    padding: 15px 0;
+    background:blue;
+}
+.navbar .max-width{
+   display:flex;
+   align-items:center;
+   justify-content: space-between;
+}
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .logo a span{
+    color:blue;
+    transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span{
+    color: #fff;  
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    color:#fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left:25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: lightblue;
+}
+.navbar .sticky .menu li a:hover{
+    color: #fff;  
+}
+.menu-btn{
+    color:#fff;
+    font-size: 23px;
+    cursor:pointer;
+    display:none;
+}
+.home {
+    display: flex;
+    background: url('covid.png');
+    background-size:cover;
+    height:100vh;
+    color: #fff;
+    min-height:500px;
+    font-family:'Ubuntu', sans-serif;
+}
+.home .max-width{
+    margin: auto 0 auto 200px;
+}
+.home .home-content .text-1{
+    font-size: 50px;
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight:600;
+    margin-left:-3px;
+}
+.home .home-content a{
+    display: inline-block;
+    background: red;
+    color:black;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid red;
+    transition: all 0.3s ease;
+}
+.home .home-content a:hover{
+    color: white;
+    background:none;
+}
+.menu-btn{
+    color:#fff;
+    font-size: 23px;
+    cursor:pointer;
+    display:none;
+}
+.about{
+    display: flex;
+    background: url('bg.jpg');
+    height:100vh;
+    color: #fff;
+    min-height:500px;
+    font-family:'Ubuntu', sans-serif;
+}
+.about .about-content h2{
+    text-align: center;
+    height: 10vh;
+    color:white;
+    font-size: 28px;
+}
+.about .about-content table,th,tr{
+   right:100px;
+   border: 1px solid black;
+   border-collapse: collapse;
+   color:white;
+}
+.about .about-content img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+/*safety*/
+.safety {
+    display: flex;
+    background: url('covid.png');
+    background-size:cover;
+    height:100vh;
+    color: #fff;
+    min-height:500px;
+    font-family:'Ubuntu', sans-serif;
+}
+.feedback{
+    display: flex;
+    height:100vh;
+    color: #fff;
+    min-height:500px;
+    font-family:'Ubuntu', sans-serif;
+}
+.feedback .feedback-content form{
+    /*margin:0 auto;*/
+    margin-left: 100px;
+    margin-right: 300px;
+    padding:20px;
+    width:70%;
+    text-align:left;
+    border:1px solid white;
+}
+input[type=text], textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+  }
+button{
+    background-color: blue;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+.effect {
+    display: flex;
+    background: url('bg2.jpg');
+    background-size:cover;
+    height:100vh;
+    color: #fff;
+    min-height:500px;
+    font-family:'Ubuntu', sans-serif;
+}
+.effect .effect-content table,th,tr,td{
+    background-color: #273746;
+    width:750px;
+    right:100px;
+    border: 1px solid white;
+    color:white;
+ }
+ .effect .effect-content th,tr,td{
+    padding: 10px;
+ }
+ .effect .effect-content li{
+     margin-left:30px;
+ }
+ .step{
+    display: flex;
+    background: url('bg3.jpg');
+    background-size:cover;
+    height:100vh;
+    color: #fff;
+    min-height:500px;
+    font-family:'Ubuntu', sans-serif;
+}
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+  }
+  
+  /* Style the images inside the grid */
+  .column img {
+    opacity: 0.8; 
+    cursor: pointer; 
+  }
+  
+  .column img:hover {
+    opacity: 1;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The expanding image container */
+  .container {
+    position: relative;
+    display: none;
+  }
+  
+  /* Expanding image text */
+  #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+  }
+  
+  /* Closable button inside the expanded image */
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
+  footer{
+    text-align: center;
+    background: gray;
+    padding: 20px 23px;
+}
+footer span a{
+    color:blue;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+
